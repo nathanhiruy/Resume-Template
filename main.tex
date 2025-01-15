@@ -1,0 +1,186 @@
+documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[margin=1.4cm]{geometry}
+
+% Author: Nathan Hiruy, based on Erik Cupsa's resume template (https://github.com/Erik-Cupsa/ResumeTemplate/tree/main)
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.15in}
+ \addtolength{\textwidth}{0.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Large \scshape John Doe} \\[2mm]
+    \footnotesize \raisebox{-0.1\height}
+    \faPhone\ \underline{(123) 456-7890} ~ 
+    {\faEnvelope\  \underline{johndoe@example.com}} ~ 
+    {\faLinkedin\ \underline{\href{https://www.linkedin.com/in/johndoe/}{linkedin.com/in/johndoe}}  ~
+    {\faGithub\ \underline{\href{https://github.com/johndoe}{github.com/johndoe}} ~
+    %{\faBriefcase\ \underline{\href{https://mscott-portfolio.vercel.app/}{mscott-portfolio.vercel.app/}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------Objective----------------
+% More important for students, new grads or people switching career lanes. Feel free to remove if not applicable to you
+% P.S If the job you're applying to requires you to move out of your country, add "Open to relocation" here
+\section{Objective}
+What's your experience + what type of position are you looking for as your next role
+
+%-----------EDUCATION-----------
+% If you're not a student or new grad, put the education section at the bottom
+% Inlcude GPA if you want, but not necessary. If you do, make sure it's >3.5 
+\section{Education} \\[1mm]
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Mars}{Date}
+      {Bachelor/Master of EE/CS/CE/ME... $|$ Major/Minor
+      }{}
+  \resumeSubHeadingListEnd
+
+%-----------Technical Skills-----------
+% Every engineer is different, change this section accordingly
+\section{Technical Skills}
+\vspace{-3pt}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{   
+     \textbf{Languages}{: Matlab, Python, C/C++} \\[1mm]
+     \textbf{Tools}{: Altium, Cadence, PSpice, Git} \\[1mm]
+     \textbf{Protocols}{: I2C, UART, SPI}
+    }}
+ \end{itemize}
+ \vspace{-20pt}
+
+\vspace{-2pt} 
+%-----------Experience---------------
+% Don't use the "Accomplised [X]..." format word for word, but use the same style. Use action verbs(Designed, Led, Implemented, Developed etc.) and quantify your results
+\section{Work Experience}
+    \resumeSubHeadingListStart
+                \resumeSubheading{Company}{Date}{Job Title}{} 
+                \resumeItemListStart
+                    \resumeItem{"Accomplished [X] as measured by [Y], by doing [Z]."}
+                    \resumeItemListEnd
+                    
+            \resumeSubheading{Company}{Date}{Job Title}{} 
+                \resumeItemListStart
+                    \resumeItem{"Accomplished [X] as measured by [Y], by doing [Z]."}
+                    \resumeItemListEnd
+                    
+            \resumeSubheading{Company}{Date}{Job Title}{}
+                \resumeItemListStart
+                    \resumeItem{"Accomplished [X] as measured by [Y], by doing [Z]."}
+                    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    \vspace{-12pt}
+
+%-----------Projects-----------
+% This section needs alot of emphasis if you have no work experience
+\section{Projects} 
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+            {\textbf{{Project Name}}}{Tool $|$ Tool $|$ Tool}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{"Accomplished [X] as measured by [Y], by doing [Z]."}
+          \resumeItemListEnd
+\vspace{-20pt}
+    \resumeProjectHeading
+            {\textbf{{Project Name}}}{Tool $|$ Tool}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{"Accomplished [X] as measured by [Y], by doing [Z]."}
+          \resumeItemListEnd      
+ \vspace{-15pt}
+ 
+
+
+
+
+
+\end{document}
